@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: deepseek-alisa
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        sync: false
